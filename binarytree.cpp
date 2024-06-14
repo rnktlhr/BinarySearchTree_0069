@@ -51,7 +51,13 @@ public:
             parent->leftchild = newNode; //
         }
         else if(element > parent->info){
-
+            parent->rightchild = newNode;
         }
+    }
+
+    void search(string lement, Node*& parent, Node*& currentNode){
+        currentNode = ROOT;
+        parent = NULL;
+        
     }
 };
