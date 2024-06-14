@@ -29,16 +29,16 @@ public:
     ROOT = NULL; //initializing ROOT to null
     }
 
-    void insert(string elemement) //
+    void insert(string element) //
     {
-        Node* newNode = new Node(elemement, NULL, NULL); //
-        newNode->info = elemement;
+        Node* newNode = new Node(element, NULL, NULL); //
+        newNode->info = element;
         newNode->leftchild = NULL;
         newNode->rightchild = NULL;
 
         Node* parent = NULL;
         Node* currentNode = NULL;
-        search(elemement, parent, currentNode);//
+        search(element, parent, currentNode);//
 
         if(parent == NULL) //
         {
@@ -46,9 +46,12 @@ public:
             return;
         }
 
-        if(elemement < parent->info) //
+        if(element < parent->info) //
         {
             parent->leftchild = newNode; //
+        }
+        else if(element > parent->info){
+
         }
     }
 };
