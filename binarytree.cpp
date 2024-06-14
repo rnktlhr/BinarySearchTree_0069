@@ -2,6 +2,12 @@
 #include <vector>
 using namespace std;
 
-int main(){
-    
-}
+class Node
+{
+public:
+    string info;
+    Node* leftchild;
+    Node* rightchild;
+
+
+};
