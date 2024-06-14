@@ -39,5 +39,11 @@ public:
         Node* parent = NULL;
         Node* currentNode = NULL;
         search(elemement, parent, currentNode);//
+
+        if(parent == NULL) //
+        {
+            ROOT = newNode;
+            return;
+        }
     }
 };
