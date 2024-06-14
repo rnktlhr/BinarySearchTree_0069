@@ -28,4 +28,16 @@ public:
     {
     ROOT = NULL; //initializing ROOT to null
     }
+
+    void insert(string elemement) //
+    {
+        Node* newNode = new Node(elemement, NULL, NULL); //
+        newNode->info = elemement;
+        newNode->leftchild = NULL;
+        newNode->rightchild = NULL;
+
+        Node* parent = NULL;
+        Node* currentNode = NULL;
+        search(elemement, parent, currentNode);//
+    }
 };
